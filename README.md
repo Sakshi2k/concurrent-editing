@@ -23,27 +23,29 @@ Further Reading: [How to build a real-time collaborative app using CRDT in angu
 ## Note: 
 In this tutorial, we will be using the Yjs NPM module as the CRDT framework. Users can implement their own design for the text editor. We are using Angular in this tutorial to implement the same.
 
+### Technologies used :
+#### Yjs
+Yjs is a CRDT implementation that exposes its internal data structure as shared types. Shared types are common data types like Map or Array with superpowers: changes are automatically distributed to other peers and merged without merge conflicts.
 
-## Screenshots of the real-time collaborative app using CRDT:
+#### y-websocket 
+The Websocket Provider implements a classical client server model. Clients connect to a single endpoint over Websocket. The server distributes awareness information and document updates among clients
+
+#### CodeMirror
+CodeMirror is a code-editor component that can be embedded in Web pages. The core library provides only the editor component, no accompanying buttons, auto-completion, or other IDE functionality. It does provide a rich API on top of which such functionality can be straightforwardly implemented. 
+
 
 
 ### Real-time Collaborative Text Editor using CRDT
 
-
 ![](https://miro.medium.com/max/1250/1*G1CMih0JRaD5cVgd-2S3kA.gif)
-
 
 ### Real-time Collaborative Text Editor with websocket connection using Yjs NPM module
 
-
 ![](https://miro.medium.com/max/1250/1*0YdDkswFLDwtPWStoXAe7A.gif)
-
 
 ### Real-time Collaborative Todo App using CRDT
 
-
 ![](https://miro.medium.com/max/1250/1*RikSPbWYG5p30gZomfkjdA.gif)
-
 
 
 ## Summary
